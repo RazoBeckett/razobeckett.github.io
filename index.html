@@ -10,7 +10,7 @@
       type="image/png"
       href="https://pbs.twimg.com/profile_images/1878028553209434112/IMX6XRlh_400x400.jpg"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
@@ -37,12 +37,12 @@
         <div class="hidden md:flex space-x-4">
           <a
             href="#projects"
-            class="text-purple-700 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
+            class="text-purple-600 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
             >Projects</a
           >
           <a
             href="#contact"
-            class="text-purple-700 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
+            class="text-purple-600 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
             >Contact</a
           >
         </div>
@@ -54,12 +54,14 @@
       >
         <a
           href="#projects"
-          class="text-purple-700 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
+          @click="open = false"
+          class="text-purple-600 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
           >Projects</a
         >
         <a
           href="#contact"
-          class="text-purple-700 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
+          @click="open = false"
+          class="text-purple-600 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
           >Contact</a
         >
       </div>
