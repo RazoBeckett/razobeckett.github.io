@@ -1,92 +1,136 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Mayur Raut's Personal Website" />
     <title>Mayur Raut</title>
-    <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1878028553209434112/IMX6XRlh_400x400.jpg">
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://pbs.twimg.com/profile_images/1878028553209434112/IMX6XRlh_400x400.jpg"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <section id="home">
-      <h2>Hi, I'm Mayur Raut!</h2>
-      <p>
-        Welcome to my personal website. I'm a passionate developer and tech
-        enthusiast.
-      </p>
-      <!-- <img -->
-      <!--   src="" -->
-      <!--   alt="a.k.a Razo Beckett" -->
-      <!-- /> -->
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a Computer Engineering student at VIIT, currently learning and
-        building various software solutions. My interests include Linux, DevOps,
-        and Cloud Engineering. I also enjoy working on open-source projects and
-        contributing to the community.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>My Projects</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/RazoBeckett/Password-Manager"
-            >Password Manager</a
-          >
-          - A simple password manager written in Python with AES-Encryption.
-        </li>
-        <li>
-          <a href="https://github.com/RazoBeckett/dwm">DWM</a> - A tiling window
-          manager, maintaining my own build of it.
-        </li>
-        <li>
+  <body class="bg-gray-900 text-white font-sans">
+    <nav class="fixed w-full z-50 top-0 bg-gray-800 p-4 shadow-md">
+      <div class="max-w-4xl mx-auto flex justify-between items-center">
+        <a href="#home" class="text-xl font-bold">Mayur Raut</a>
+        <div class="space-x-4">
           <a
-            href="https://github.com/pulls?q=is%3Apr+archived%3Afalse+is%3Aclosed+author%3ARazoBeckett+-user%3Arazobeckett+"
-            >My Contributions to Open-Source Projects</a
+            href="#projects"
+            class="text-purple-700 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
+            >Projects</a
           >
-          - (You Must be Logged in to github)
-        </li>
-      </ul>
-    </section>
+          <a
+            href="#socials"
+            class="text-purple-700 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
+            >Socials</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="max-w-4xl mx-auto p-6">
+      <section id="home" class="text-center py-20 mt-16">
+        <h1 class="text-4xl font-bold">Hi, I'm Mayur Raut!</h1>
+        <p class="text-lg mt-2">
+          Welcome to my personal website. I'm a passionate developer and tech
+          enthusiast.
+        </p>
+      </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        Email:
-        <a href="mailto:mayurraut.dev@gmail.com">mayurraut.dev@gmail.com</a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/RazoBeckett">github.com/RazoBeckett</a>
-      </p>
-      <p>
-        Twitter:
-        <a href="https://twitter.com/RazoBeckett">twitter.com/RazoBeckett</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/mayurraut0/"
-          >linkedin.com/in/mayurraut0</a
-        >
-      </p>
-      <p>
-        Instagram:
-        <a href="https://www.instagram.com/razobeckett"
-          >instagram.com/razobeckett</a
-        >
-        - (Not Active on Instagram anymore)
-      </p>
-    </section>
+      <section id="about" class="py-10">
+        <h2 class="text-2xl font-semibold border-b pb-2">About Me</h2>
+        <p class="mt-4 text-gray-300">
+          I'm a Computer Engineering student at VIIT, currently learning and
+          building various software solutions. My interests include Linux,
+          DevOps, and Cloud Engineering. I also enjoy working on open-source
+          projects and contributing to the community.
+        </p>
+      </section>
 
-    <footer>
-      &copy; 2025 Razo Beckett
-      <p style="font-size: 12px;">Just A static site i'm not into web dev at all.</p>
-    </footer>
+      <section id="projects" class="py-10">
+        <h2 class="text-2xl font-semibold border-b pb-2">My Projects</h2>
+        <ul class="mt-4 space-y-3 text-gray-300">
+          <li>
+            <a
+              href="https://github.com/RazoBeckett/Password-Manager"
+              class="text-blue-400 hover:underline"
+              >Password Manager</a
+            >
+            - A simple password manager written in Python with AES encryption.
+          </li>
+          <li>
+            <a
+              href="https://github.com/RazoBeckett/dwm"
+              class="text-blue-400 hover:underline"
+              >DWM</a
+            >
+            - My customized build of a tiling window manager.
+          </li>
+          <li>
+            <a
+              href="https://github.com/pulls?q=is%3Apr+archived%3Afalse+is%3Aclosed+author%3ARazoBeckett+-user%3Arazobeckett+"
+              class="text-blue-400 hover:underline"
+              >My Contributions to Open-Source Projects</a
+            >
+            - (Requires GitHub login)
+          </li>
+        </ul>
+      </section>
+
+      <section id="socials" class="py-10">
+        <h2 class="text-2xl font-semibold border-b pb-2">Contact Me</h2>
+        <div class="mt-4 space-y-2 text-gray-300">
+          <p>
+            Email:
+            <a
+              href="mailto:mayurraut.dev@gmail.com"
+              class="text-blue-400 hover:underline"
+              >mayurraut.dev@gmail.com</a
+            >
+          </p>
+          <p>
+            GitHub:
+            <a
+              href="https://github.com/RazoBeckett"
+              class="text-blue-400 hover:underline"
+              >github.com/RazoBeckett</a
+            >
+          </p>
+          <p>
+            Twitter:
+            <a
+              href="https://twitter.com/RazoBeckett"
+              class="text-blue-400 hover:underline"
+              >twitter.com/RazoBeckett</a
+            >
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/mayurraut0/"
+              class="text-blue-400 hover:underline"
+              >linkedin.com/in/mayurraut0</a
+            >
+          </p>
+          <p>
+            Instagram:
+            <a
+              href="https://www.instagram.com/razobeckett"
+              class="text-blue-400 hover:underline"
+              >instagram.com/razobeckett</a
+            >
+            - (Not Active Anymore)
+          </p>
+        </div>
+      </section>
+
+      <footer class="text-center text-gray-400 py-6 border-t mt-10">
+        <p>&copy; 2025 Razo Beckett</p>
+        <p class="text-sm">Just a static site, I'm not into web dev at all.</p>
+      </footer>
+    </div>
   </body>
 </html>
