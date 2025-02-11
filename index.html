@@ -11,6 +11,7 @@
       href="https://pbs.twimg.com/profile_images/1878028553209434112/IMX6XRlh_400x400.jpg"
     />
     <link href="./output.css" rel="stylesheet" />
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
@@ -38,7 +39,7 @@
           <a
             href="#projects"
             class="text-purple-600 hover:text-white font-medium text-sm px-1 py-1 text-center dark:text-purple-400"
-            >Projects</a
+          >Projects</a
           >
           <a
             href="#contact"
@@ -86,33 +87,135 @@
       </section>
 
       <section id="projects" class="py-10">
-        <h2 class="text-2xl font-semibold border-b pb-2">My Projects</h2>
-        <ul class="mt-4 space-y-3 text-gray-300">
-          <li>
-            <a
-              href="https://github.com/RazoBeckett/Password-Manager"
-              class="text-blue-400 hover:underline"
-              >Password Manager</a
-            >
-            - A simple password manager written in Python with AES encryption.
-          </li>
-          <li>
-            <a
-              href="https://github.com/RazoBeckett/dwm"
-              class="text-blue-400 hover:underline"
-              >DWM</a
-            >
-            - My customized build of a tiling window manager.
-          </li>
-          <li>
-            <a
-              href="https://github.com/pulls?q=is%3Apr+archived%3Afalse+is%3Aclosed+author%3ARazoBeckett+-user%3Arazobeckett+"
-              class="text-blue-400 hover:underline"
-              >My Contributions to Open-Source Projects</a
-            >
-            - (Requires GitHub login)
-          </li>
-        </ul>
+        <h2 class="text-2xl font-semibold border-b pb-2 mb-10">My Projects</h2>
+
+        <article style="background-image: radial-gradient(circle, #101828 0%, transparent 100%)"
+          class="border border-zinc-700 bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl">
+          <div>
+            <a class="text-xl inline-flex items-center gap-2 hover:opacity-60 transition mb-2" target="_blank" href="https://github.com/RazoBeckett/password-manager">
+              <h3 class="text-xl font-semibold inline-block">Password Manager</h3>
+              <span class="text-zinc-400">
+                <!-- icons/astrolink -->
+                <svg class="w-5 h-5" viewBox="0 0 15 15" fill="none" xmlns="https://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12 13C12.5523 13 13 12.5523 13 12V3C13 2.44771 12.5523 2 12 2H3C2.44771 2 2 2.44771 2 3V6.5C2 6.77614 2.22386 7 2.5 7C2.77614 7 3 6.77614 3 6.5V3H12V12H8.5C8.22386 12 8 12.2239 8 12.5C8 12.7761 8.22386 13 8.5 13H12ZM9 6.5C9 6.5001 9 6.50021 9 6.50031V6.50035V9.5C9 9.77614 8.77614 10 8.5 10C8.22386 10 8 9.77614 8 9.5V7.70711L2.85355 12.8536C2.65829 13.0488 2.34171 13.0488 2.14645 12.8536C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L7.29289 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H8.5C8.56779 6 8.63244 6.01349 8.69139 6.03794C8.74949 6.06198 8.80398 6.09744 8.85143 6.14433C8.94251 6.23434 8.9992 6.35909 8.99999 6.49708L8.99999 6.49738"></path>
+                </svg>
+              </span>
+            </a>
+            <p class="text-zinc-400 text-sm text-pretty pr-2 mb-4">Password Manager is a Python-based microproject that allows users to securely store and manage their passwords. Developed as part of a semester project, it emphasizes security and usability</p>
+            <div class="flex items-center gap-3">
+              <img src="https://skillicons.dev/icons?i=python&theme=dark">
+              <!-- Slot area for additional elements -->
+            </div>
+          </div>
+          <img class="w-full mb-5 shadow-xl rounded-lg md:w-52 md:mb-0 object-contain" src="https://github.com/RazoBeckett/Password-Manager/raw/main/assets/main-pane.png" alt="image" />
+        </article>
+
+        <article style="background-image: radial-gradient(circle, #101828 0%, transparent 100%)"
+          class="border border-zinc-700 bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl">
+          <div>
+            <a class="text-xl inline-flex items-center gap-2 hover:opacity-60 transition mb-2" target="_blank" href="https://github.com/RazoBeckett/examhub">
+              <h3 class="text-xl font-semibold inline-block">ExamHub</h3>
+              <span class="text-zinc-400">
+                <!-- icons/astrolink -->
+                <svg class="w-5 h-5" viewBox="0 0 15 15" fill="none" xmlns="https://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12 13C12.5523 13 13 12.5523 13 12V3C13 2.44771 12.5523 2 12 2H3C2.44771 2 2 2.44771 2 3V6.5C2 6.77614 2.22386 7 2.5 7C2.77614 7 3 6.77614 3 6.5V3H12V12H8.5C8.22386 12 8 12.2239 8 12.5C8 12.7761 8.22386 13 8.5 13H12ZM9 6.5C9 6.5001 9 6.50021 9 6.50031V6.50035V9.5C9 9.77614 8.77614 10 8.5 10C8.22386 10 8 9.77614 8 9.5V7.70711L2.85355 12.8536C2.65829 13.0488 2.34171 13.0488 2.14645 12.8536C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L7.29289 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H8.5C8.56779 6 8.63244 6.01349 8.69139 6.03794C8.74949 6.06198 8.80398 6.09744 8.85143 6.14433C8.94251 6.23434 8.9992 6.35909 8.99999 6.49708L8.99999 6.49738"></path>
+                </svg>
+              </span>
+            </a>
+            <p class="text-zinc-400 text-sm text-pretty pr-2 mb-4">Web-based platform for managing MCQ-based online examinations, featuring student and admin portals. For this project, I was responsible for implementing Docker support. I created a multi-stage Dockerfile that sets up the development environment and prepares the production-ready application using Gunicorn, ensuring a seamless deployment process.</p>
+            <div class="flex items-center gap-3">
+              <img src="https://skillicons.dev/icons?i=python,django,html,css&theme=dark">
+              <!-- Slot area for additional elements -->
+            </div>
+          </div>
+          <img class="w-full mb-5 shadow-xl rounded-lg md:w-52 md:mb-0 object-contain" src="https://github.com/RazoBeckett/examhub/blob/b7deb42f276ad6597ff73727633ae110ca9754f6/Linkedin%20Post/RAW%20SS/TeacherDashboard.png?raw=true" alt="image" />
+        </article>
+
+        <article style="background-image: radial-gradient(circle, #101828 0%, transparent 100%)"
+          class="border border-zinc-700 bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl">
+          <div>
+            <a class="text-xl inline-flex items-center gap-2 hover:opacity-60 transition mb-2" target="_blank" href="https://github.com/RazoBeckett/dwm">
+              <h3 class="text-xl font-semibold inline-block">DWM</h3>
+              <span class="text-zinc-400">
+                <!-- icons/astrolink -->
+                <svg class="w-5 h-5" viewBox="0 0 15 15" fill="none" xmlns="https://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12 13C12.5523 13 13 12.5523 13 12V3C13 2.44771 12.5523 2 12 2H3C2.44771 2 2 2.44771 2 3V6.5C2 6.77614 2.22386 7 2.5 7C2.77614 7 3 6.77614 3 6.5V3H12V12H8.5C8.22386 12 8 12.2239 8 12.5C8 12.7761 8.22386 13 8.5 13H12ZM9 6.5C9 6.5001 9 6.50021 9 6.50031V6.50035V9.5C9 9.77614 8.77614 10 8.5 10C8.22386 10 8 9.77614 8 9.5V7.70711L2.85355 12.8536C2.65829 13.0488 2.34171 13.0488 2.14645 12.8536C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L7.29289 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H8.5C8.56779 6 8.63244 6.01349 8.69139 6.03794C8.74949 6.06198 8.80398 6.09744 8.85143 6.14433C8.94251 6.23434 8.9992 6.35909 8.99999 6.49708L8.99999 6.49738"></path>
+                </svg>
+              </span>
+            </a>
+            <p class="text-zinc-400 text-sm text-pretty pr-2 mb-4">This project showcases a completely minimal and clean configuration of the Dynamic Window Manager (DWM). Written primarily in C, this DWM rice focuses on simplicity and efficiency, providing an elegant and functional desktop environment.</p>
+            <div class="flex items-center gap-3">
+              <img src="https://skillicons.dev/icons?i=c,linux&theme=dark">
+              <!-- Slot area for additional elements -->
+            </div>
+          </div>
+          <img class="w-full mb-5 shadow-xl rounded-lg md:w-52 md:mb-0 object-contain" src="https://github.com/RazoBeckett/dwm/blob/main/assets/preview.png?raw=true" alt="image" />
+        </article>
+
+        <article style="background-image: radial-gradient(circle, #101828 0%, transparent 100%)"
+          class="border border-zinc-700 bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl">
+          <div>
+            <a class="text-xl inline-flex items-center gap-2 hover:opacity-60 transition mb-2" target="_blank" href="https://github.com/RazoBeckett/random-scripts">
+              <h3 class="text-xl font-semibold inline-block">Random Scripts</h3>
+              <span class="text-zinc-400">
+                <!-- icons/astrolink -->
+                <svg class="w-5 h-5" viewBox="0 0 15 15" fill="none" xmlns="https://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12 13C12.5523 13 13 12.5523 13 12V3C13 2.44771 12.5523 2 12 2H3C2.44771 2 2 2.44771 2 3V6.5C2 6.77614 2.22386 7 2.5 7C2.77614 7 3 6.77614 3 6.5V3H12V12H8.5C8.22386 12 8 12.2239 8 12.5C8 12.7761 8.22386 13 8.5 13H12ZM9 6.5C9 6.5001 9 6.50021 9 6.50031V6.50035V9.5C9 9.77614 8.77614 10 8.5 10C8.22386 10 8 9.77614 8 9.5V7.70711L2.85355 12.8536C2.65829 13.0488 2.34171 13.0488 2.14645 12.8536C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L7.29289 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H8.5C8.56779 6 8.63244 6.01349 8.69139 6.03794C8.74949 6.06198 8.80398 6.09744 8.85143 6.14433C8.94251 6.23434 8.9992 6.35909 8.99999 6.49708L8.99999 6.49738"></path>
+                </svg>
+              </span>
+            </a>
+            <p class="text-zinc-400 text-sm text-pretty pr-2 mb-4">This project contains a collection of random and helpful scripts and snippets designed for automation. Written entirely in Shell, these scripts aim to streamline and simplify various tasks, making it easier to automate workflows and increase productivity. </p>
+            <div class="flex items-center gap-3">
+              <img src="https://skillicons.dev/icons?i=bash,linux&theme=dark">
+              <!-- Slot area for additional elements -->
+            </div>
+          </div>
+          <img class="w-full mb-5 shadow-xl rounded-lg md:w-52 md:mb-0 object-contain" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhelloacm.com%2Fwp-content%2Fuploads%2F2016%2F03%2Fbash-shellshock.png&f=1&nofb=1&ipt=401754b0a97b8537886ffe8092392b5ca91938bff0bf6732244523aeb4908d31&ipo=images" alt="image" />
+        </article>
+
+        <article style="background-image: radial-gradient(circle, #101828 0%, transparent 100%)"
+          class="border border-zinc-700 bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl">
+          <div>
+            <a class="text-xl inline-flex items-center gap-2 hover:opacity-60 transition mb-2" target="_blank" href="https://github.com/RazoBeckett/uwunified.nvim">
+              <h3 class="text-xl font-semibold inline-block">Uwunified.nvim</h3>
+              <span class="text-zinc-400">
+                <!-- icons/astrolink -->
+                <svg class="w-5 h-5" viewBox="0 0 15 15" fill="none" xmlns="https://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12 13C12.5523 13 13 12.5523 13 12V3C13 2.44771 12.5523 2 12 2H3C2.44771 2 2 2.44771 2 3V6.5C2 6.77614 2.22386 7 2.5 7C2.77614 7 3 6.77614 3 6.5V3H12V12H8.5C8.22386 12 8 12.2239 8 12.5C8 12.7761 8.22386 13 8.5 13H12ZM9 6.5C9 6.5001 9 6.50021 9 6.50031V6.50035V9.5C9 9.77614 8.77614 10 8.5 10C8.22386 10 8 9.77614 8 9.5V7.70711L2.85355 12.8536C2.65829 13.0488 2.34171 13.0488 2.14645 12.8536C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L7.29289 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H8.5C8.56779 6 8.63244 6.01349 8.69139 6.03794C8.74949 6.06198 8.80398 6.09744 8.85143 6.14433C8.94251 6.23434 8.9992 6.35909 8.99999 6.49708L8.99999 6.49738"></path>
+                </svg>
+              </span>
+            </a>
+            <p class="text-zinc-400 text-sm text-pretty pr-2 mb-4">Neovim plugin that brings a unique and muted colorscheme to enhance your coding experience. this plugin aims to provide a cohesive and soothing visual environment for developers</p>
+            <div class="flex items-center gap-3">
+              <img src="https://skillicons.dev/icons?i=lua,neovim&theme=dark">
+              <!-- Slot area for additional elements -->
+            </div>
+          </div>
+          <img class="w-full mb-5 shadow-xl rounded-lg md:w-52 md:mb-0 object-contain" src="https://github.com/RazoBeckett/uwunified.nvim/raw/main/previews/preview1.png" alt="image" />
+        </article>
+
+
+        <article style="background-image: radial-gradient(circle, #101828 0%, transparent 100%)"
+          class="border border-zinc-700 bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between shadow-xl">
+          <div>
+            <a class="text-xl inline-flex items-center gap-2 hover:opacity-60 transition mb-2" target="_blank" href="https://github.com/RazoBeckett/duckdnsupdate">
+              <h3 class="text-xl font-semibold inline-block">DuckDnsUpdate</h3>
+              <span class="text-zinc-400">
+                <!-- icons/astrolink -->
+                <svg class="w-5 h-5" viewBox="0 0 15 15" fill="none" xmlns="https://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12 13C12.5523 13 13 12.5523 13 12V3C13 2.44771 12.5523 2 12 2H3C2.44771 2 2 2.44771 2 3V6.5C2 6.77614 2.22386 7 2.5 7C2.77614 7 3 6.77614 3 6.5V3H12V12H8.5C8.22386 12 8 12.2239 8 12.5C8 12.7761 8.22386 13 8.5 13H12ZM9 6.5C9 6.5001 9 6.50021 9 6.50031V6.50035V9.5C9 9.77614 8.77614 10 8.5 10C8.22386 10 8 9.77614 8 9.5V7.70711L2.85355 12.8536C2.65829 13.0488 2.34171 13.0488 2.14645 12.8536C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L7.29289 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H8.5C8.56779 6 8.63244 6.01349 8.69139 6.03794C8.74949 6.06198 8.80398 6.09744 8.85143 6.14433C8.94251 6.23434 8.9992 6.35909 8.99999 6.49708L8.99999 6.49738"></path>
+                </svg>
+              </span>
+            </a>
+            <p class="text-zinc-400 text-sm text-pretty pr-2 mb-4">A simple command line tool to update your duckdns domain with your current public ip address Built with Go using the Cobra library</p>
+            <div class="flex items-center gap-3">
+              <img src="https://skillicons.dev/icons?i=go&theme=dark">
+              <!-- Slot area for additional elements -->
+            </div>
+          </div>
+          <img class="w-full mb-5 shadow-xl rounded-lg md:w-52 md:mb-0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJpZk0f5xElzY0DN1H9xg5w5uvA2TtQ435g&s" alt="image" />
+        </article>
+
       </section>
 
       <section id="contact" class="py-10">
