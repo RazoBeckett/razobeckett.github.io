@@ -51,6 +51,8 @@
 
       <div
         x-show="open"
+        x-transition:enter.scale
+        x-transition:leave.opacity
         class="md:hidden flex flex-col space-y-2 mt-4 bg-gray-700 p-4"
       >
         <a
