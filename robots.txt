@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mayurraut.is-a.dev/sitemap.xml
