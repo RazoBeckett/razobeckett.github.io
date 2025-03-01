@@ -19,25 +19,28 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        run: npm install tailwindcss
+        run: npm install
 
       - name: Build tailwindcss
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
         run: |
           git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Clone the deploy branch to a temporary directory
           git clone --depth=1 --branch=deploy https://github.com/${{ github.repository }} deploy-temp
           rm -rf deploy-temp/*
 
           # Copy only required files
-          cp index.html output.css deploy-temp/
+          cp sitemap.xml robots.txt index.html output.css deploy-temp/
 
           # Push to deploy branch
           cd deploy-temp
           git add .
           git commit -m "Deploy latest build" || echo "No changes to commit"
-          git push origin deploy
+          git remote set-url origin https://x-access-token:"$GH_TOKEN"@github.com/RazoBeckett/razobeckett.github.io.git
+          git push origin deploy --force
