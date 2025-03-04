@@ -36,7 +36,7 @@ jobs:
           rm -rf deploy-temp/*
 
           # Copy only required files
-          cp sitemap.xml robots.txt index.html output.css deploy-temp/
+          cp -r CNAME sitemap.xml robots.txt index.html assets/ deploy-temp/
 
           # Push to deploy branch
           cd deploy-temp
