@@ -1,11 +1,12 @@
 ---
+const linkClass="hover:underline text-xl"
 ---
-<nav class="fixed top-0 left-0 w-full z-50 bg-transparent px-6 py-4 flex items-center justify-between text-white">
-  <a href="#"> <div class="text-xl font-bold"><img src="favicon.ico"></div></a>
+<nav class="fixed top-0 left-0 w-full z-20 bg-transparent p-4 flex items-center justify-between text-white">
+  <a href="#"><img src="favicon.ico"></a>
   <ul class="flex space-x-6">
-    <li><a href="#projects" class="hover:underline">Projects</a></li>
-    <li><a href="/blog" class="hover:underline">Blog</a></li>
-    <li><a href="#contact" class="hover:underline">Contact</a></li>
+    <li><a href="/blog" class={linkClass}>Blog</a></li>
+    <li><a href="#projects" class={linkClass}>Projects</a></li>
+    <li><a href="#contact" class={linkClass}>Contact</a></li>
   </ul>
 </nav>
 

@@ -1,11 +1,13 @@
 @import "tailwindcss";
 @import "@fontsource/instrument-serif";
+@import "@fontsource-variable/lora";
 
-* {
-  font-family: "Instrument Serif", serif;
+nav {
+  font-family: "Lora Variable", serif;
 }
 
 body {
+  font-family: "Instrument Serif", serif;
   background-color: #000411;
   color: #ffffff;
 }
