@@ -4,13 +4,29 @@ import SocialLinks from "../components/socials.astro";
 ---
 
 <BaseLayout>
-	<main class="pt-20 px-6 pl-30">
-		<h1 class="text-7xl pt-55">Mayur Raut</h1>
-		<p class="pt-2 text-2xl text-gray-500">
-			I'm a passionate developer and tech enthusiast.
-		</p>
-		<div class="pt-80">
-			<SocialLinks />
+	<div class="relative min-h-screen">
+		<!-- Radial “sand splash” at top-left, fading by 60% -->
+		<div
+			class="pointer-events-none absolute inset-0 opacity-20"
+			style="
+        background: radial-gradient(
+					circle farthest-corner at top left,
+          rgba(0, 255, 255, 0.8)   0%,    /* cyan core */
+          rgba(138,  43, 226, 0.8) 40%,   /* violet mid */
+          transparent             60%     /* fade out */
+        );
+      "
+		>
 		</div>
-	</main>
+
+		<main class="relative z-10 pt-20 px-6 pl-30">
+			<h1 class="text-7xl pt-55">Mayur Raut</h1>
+			<p class="pt-2 text-2xl text-gray-500">
+				I’m a passionate developer and tech enthusiast.
+			</p>
+			<div class="pt-80">
+				<SocialLinks />
+			</div>
+		</main>
+	</div>
 </BaseLayout>
