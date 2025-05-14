@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@import "@fontsource/instrument-serif";
+
+* {
+  font-family: "Instrument Serif", serif;
+}
+
+body {
+  background-color: #000411;
+  color: #ffffff;
+}
