@@ -1,0 +1,41 @@
+---
+const color = "23fff"; // Set the color for the icons without '#' as prefix
+const socials = [
+  {
+    name: "GitHub",
+    url: "https://github.com/razobeckett",
+    icon: "fa-brands:github",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/mayurraut0",
+    icon: "fa-brands:linkedin-in",
+  },
+  {
+    name: "Discord",
+    url: "https://discord.com/users/yourid",
+    icon: "fa-brands:discord",
+  },
+];
+---
+
+<div class="flex space-x-4 items-center">
+  {
+    socials.map(({ name, url, icon }) => (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={name}
+        class="inline-block h-7 w-7"
+      >
+        <img
+          class="h-full w-full"
+          src={`https://api.iconify.design/${icon}.svg?color=%${color}`}
+          alt={name}
+          loading="lazy"
+        />
+      </a>
+    ))
+  }
+</div>
